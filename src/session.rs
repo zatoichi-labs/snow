@@ -1,9 +1,9 @@
-use error::{SnowError, StateProblem};
-use handshakestate::HandshakeState;
+use crate::error::{SnowError, StateProblem};
+use crate::handshakestate::HandshakeState;
 #[cfg(feature = "nightly")] use std::convert::{TryFrom, TryInto};
 #[cfg(not(feature = "nightly"))] use utils::{TryFrom, TryInto};
-use transportstate::TransportState;
-use stateless_transportstate::StatelessTransportState;
+use crate::transportstate::TransportState;
+use crate::stateless_transportstate::StatelessTransportState;
 
 /// A state machine for the entire Noise session.
 ///

@@ -1,6 +1,6 @@
 #[cfg(feature = "nightly")] use std::convert::{TryFrom};
 #[cfg(not(feature = "nightly"))] use utils::{TryFrom};
-use error::{SnowError, PatternProblem};
+use crate::error::{SnowError, PatternProblem};
 use std::str::FromStr;
 use smallvec::SmallVec;
 

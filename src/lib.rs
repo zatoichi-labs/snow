@@ -82,6 +82,6 @@ pub mod params;
 pub mod types;
 pub mod resolvers;
 
-pub use error::SnowError;
-pub use builder::{Builder, Keypair};
-pub use session::Session;
+pub use crate::error::SnowError;
+pub use crate::builder::{Builder, Keypair};
+pub use crate::session::Session;

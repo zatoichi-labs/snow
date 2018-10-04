@@ -1,6 +1,6 @@
-use constants::TAGLEN;
-use error::{SnowError, InitStage};
-use types::Cipher;
+use crate::constants::TAGLEN;
+use crate::error::{SnowError, InitStage};
+use crate::types::Cipher;
 
 pub struct CipherState {
     cipher : Box<Cipher>,
